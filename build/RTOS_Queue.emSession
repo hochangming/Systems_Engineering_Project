@@ -1,0 +1,131 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="RTOS_Queue" radix="16" sizeText="" addressText=""/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="RTOS_Queue" radix="16" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="RTOS_Queue" radix="16" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="RTOS_Queue" radix="16" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="FreeRTOS"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;App"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;App;GUI"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;App;Term"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;CCM"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Encoders"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;I2C"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;IMU"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;IPS"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Motors"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Move"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;PID"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Pololu"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;PWM"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Serial"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Term"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Timer"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;UART"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;Ultrasound"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;BSP;UWB"/>
+  <ProjectSessionItem path="FreeRTOS;RTOS_Queue;Source Files;RTOS"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="RTOS_Queue" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="RTOS_Queue" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="RTOS_Queue" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="RTOS_Queue" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="TerminalAckToHost" name="TerminalAckToHost" radix="16" linenumber="3929" filename="../src/main.c"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="43" y="583" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/main.c" selected="0" top="560" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="43" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/semphr.h" selected="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="371" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/gui.h" selected="0" top="355" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="101" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/term.c" selected="0" top="88" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="35" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/term.h" selected="0" top="21" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="97" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/motors.h" selected="0" top="72" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="374" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Hal.c" selected="0" top="354" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Pwm.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Pwm.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="30" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/IRQ.c" selected="0" top="136" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="73" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/I2c.h" selected="0" top="57" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="83" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Hal.h" selected="0" top="76" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="80" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/imu.c" selected="0" top="78" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="24" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/PololuV5.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="706" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Source/port.c" selected="0" top="377" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="594" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Source/tasks.c" selected="0" top="571" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="106" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Source/RTOS.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="310" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Source/event_groups.c" selected="0" top="296" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="87" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Move.h" selected="0" top="74" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="36" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Move.c" selected="1" top="30" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="308" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Inc/semphr.h" selected="0" top="294" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="194" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/DotCfiles/motors.c" selected="0" top="171" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="88" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/dma.h" selected="0" top="69" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="55" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Ccm.h" selected="0" top="39" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="44" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/DotCfiles/Ccm.c" selected="0" top="28" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="91" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Inc/event_groups.h" selected="0" top="76" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="162" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Spim.h" selected="0" top="138" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1337" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Inc/task.h" selected="0" top="1312" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="40" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Inc/projdefs.h" selected="0" top="25" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="27" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/PololuV5.c" selected="0" top="11" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="179" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/Terminal/term.h" selected="0" top="159" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="75" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/Terminal/term.c" selected="0" top="60" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="14" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Serial.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="182" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/PID.c" selected="0" top="171" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="60" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/Inc/portmacro.h" selected="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Serial.h" selected="0" top="162" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="235" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Encoder.h" selected="0" top="222" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="64" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/PID.h" selected="0" top="50" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Encoder.c" selected="0" top="63" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="58" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/Common.h" selected="0" top="32" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="5975" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/MCU/STM32F7xx/CMSIS/Device/Include/stm32f722xx.h" selected="0" top="5920" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/App/RTOS/FreeRTOSConfig.h" selected="0" top="86" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/UltraSound.c" selected="0" top="39" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="75" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/DotCfiles/I2c.c" selected="0" top="59" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="163" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/ips.h" selected="0" top="150" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="253" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/deca_regs.h" selected="0" top="250" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="3" useTextEdit="1" useBinaryEdit="0" left="0" path="../src/BSP/ips.c" selected="0" top="0" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="RTOS_Queue" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="C:/cygwin64/home/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7x5_v1r1_Vectors.s&#xa;C:/Users/1800793/Desktop/SEP250_releaseV4.2/SEP250_release/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7x5_v1r1_Vectors.s&#xa;C:/cygwin64/home/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7xx_Startup.s&#xa;C:/Users/1800793/Desktop/SEP250_releaseV4.2/SEP250_release/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7xx_Startup.s&#xa;C:/cygwin64/home/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/thumb_crt0.s&#xa;C:/Users/1800793/Desktop/SEP250_releaseV4.2/SEP250_release/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/thumb_crt0.s&#xa;C:/Users/MSI/Desktop/SEP250/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/App/RTOS/Source/event_groups.c&#xa;C:/Users/MSI/Desktop/SEP250/sep250_19f_releaseV4.4/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/DotCfiles/event_groups.c&#xa;C:/Users/MSI/Desktop/SEP250/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/DotCfiles/Ccm.c&#xa;C:/Users/MSI/Desktop/SEP250/sep250_19f_releaseV4.4/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/DotCfiles/Ccm.c&#xa;C:/Users/MSI/Desktop/SEP250/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/DotCfiles/motors.c&#xa;C:/Users/MSI/Desktop/SEP250/sep250_19f_releaseV4.4/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/DotCfiles/motors.c&#xa;C:/Users/MSI/Desktop/SEP250/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/Retarget.c&#xa;C:/Users/MSI/Desktop/SEP250/sep250_19f_releaseV4.4/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/Retarget.c&#xa;C:/Users/MSI/Desktop/SEP250/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7x5_v1r1_Vectors.s&#xa;C:/Users/MSI/Desktop/SEP250/SEP250V4.5/sep250_19f_releaseV4.4.1/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7x5_v1r1_Vectors.s&#xa;C:/Users/MSI/Desktop/SEP250/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7xx_Startup.s&#xa;C:/Users/MSI/Desktop/SEP250/SEP250V4.5/sep250_19f_releaseV4.4.1/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/STM32F7xx_Startup.s&#xa;C:/Users/MSI/Desktop/SEP250/sep200_19f_release/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/thumb_crt0.s&#xa;C:/Users/MSI/Desktop/SEP250/SEP250V4.5/sep250_19f_releaseV4.4.1/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU/thumb_crt0.s" fileDialogInitialDirectory="C:/Users/MSI/Desktop/SEP250/SEP250V4.5/sep250_19f_releaseV4.4.1/Testbench/UnitTest/20.RTOS_Queue_Veh/src/BSP/MCU" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>

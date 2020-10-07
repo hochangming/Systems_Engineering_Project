@@ -1,0 +1,332 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="FreeRTOS" target="8" version="2">
+  <project Name="RTOS_Queue">
+    <configuration
+      Name="Common"
+      Placement="Flash"
+      Target="STM32F722ZE"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-D16"
+      arm_interwork="No"
+      arm_linker_heap_size="256"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="256"
+      arm_simulator_memory_simulation_parameter="ROM;0x00200000;0x00200000;ROM;0x08000000;0x00200000;RAM;0x20000000;0x00020000;RAM;0x20020000;0x00060000"
+      arm_target_debug_interface_type="ADIv5"
+      arm_target_device_name="STM32F722ZE"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="STM32F722xx;__STM32F7xx_FAMILY;__STM32F765_SUBFAMILY;ARM_MATH_CM7;FLASH_PLACEMENT=1"
+      c_user_include_directories="../src/App/Encoders;../src/App/Movement;../src/App/Terminal;../src/App/LCD;../src/App/RTOS;../src/App/RTOS/Inc;../src/BSP;../src/BSP/Motors;../src/BSP/Clock;../src/BSP/MCU/CMSIS_4/CMSIS/Include;../src/BSP/MCU/STM32F7xx/CMSIS/Device/Include;../Lib/Common/Inc;$(ProjectDir)/CMSIS_4/CMSIS/Include;$(ProjectDir)/STM32F7xx/CMSIS/Device/Include"
+      debug_register_definition_file="$(ProjectDir)/STM32F7x5_v1r1_Registers.xml"
+      debug_target_connection="J-Link"
+      gcc_entry_point="Reset_Handler"
+      linker_memory_map_file="$(ProjectDir)/STM32F765BI_MemoryMap.xml"
+      linker_section_placement_file="$(ProjectDir)/flash_placement.xml"
+      linker_strip_debug_information="No"
+      macros="DeviceHeaderFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Include/stm32f7xx.h;DeviceLibraryIdentifier=;DeviceSystemFile=$(PackagesDir)/STM32F7xx/CMSIS/Device/Source/system_stm32f7xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F7xx/Source/STM32F7x5_v1r1_Vectors.s;DeviceFamily=STM32F7xx;DeviceSubFamily=STM32F765;Target=STM32F765BI;Placement=Flash;STLport=No"
+      package_dependencies="STM32F7xx"
+      project_directory=""
+      project_type="Executable"
+      target_reset_script="Reset();"
+      target_trace_initialize_script="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <folder Name="CMSIS Files">
+      <configuration Name="Common" macros="STLport=No" />
+      <file file_name="../src/BSP/MCU/system_stm32f7xx.c" />
+    </folder>
+    <folder Name="Script Files">
+      <configuration Name="Common" macros="STLport=No" />
+    </folder>
+    <folder Name="Source Files">
+      <configuration
+        Name="Common"
+        filter="c;cpp;cxx;cc;h;s;asm;inc"
+        macros="STLport=No" />
+      <folder Name="BSP">
+        <file file_name="../src/BSP/BSP.c" />
+        <file file_name="../src/BSP/BSP.h" />
+        <folder Name="Timer">
+          <file file_name="../../../../StdLib/Release/STM32F722/TIMER_LIB.a" />
+        </folder>
+        <file file_name="../src/BSP/IRQ.c">
+          <configuration Name="Debug" build_exclude_from_build="No" />
+        </file>
+        <folder Name="Clock">
+          <file file_name="../src/BSP/Clock/Clock.c" />
+          <file file_name="../src/BSP/Clock/Clock.h" />
+        </folder>
+        <file file_name="../src/BSP/Hal.c" />
+        <file file_name="../src/BSP/Hal.h" />
+        <file file_name="../src/BSP/MCU/Retarget.c" />
+        <folder Name="Spim">
+          <file file_name="../../../../StdLib/Release/STM32F722/SPIM_LIB.a">
+            <configuration Name="Release" build_exclude_from_build="No" />
+          </file>
+        </folder>
+        <folder Name="DMA">
+          <file file_name="../src/BSP/Dma/dma.h" />
+          <file file_name="../../../../StdLib/Release/STM32F722/DMA_LIB.a">
+            <configuration Name="Debug" build_exclude_from_build="No" />
+          </file>
+        </folder>
+        <folder Name="LCD">
+          <file file_name="../src/App/LCD/LCD_ST7735R.c" />
+          <file file_name="../src/App/LCD/LCD.h" />
+        </folder>
+        <folder Name="UART">
+          <file file_name="../../../../StdLib/Release/STM32F722/SERIAL_LIB.a">
+            <configuration Name="Release" build_exclude_from_build="Yes" />
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+          </file>
+          <file file_name="../src/BSP/Usart.c" />
+        </folder>
+        <folder Name="Encoders">
+          <file file_name="../src/BSP/Encoder.c">
+            <configuration Name="Release" build_exclude_from_build="No" />
+          </file>
+          <file file_name="../src/BSP/Encoder.h" />
+          <file file_name="../src/BSP/DotCfiles/Encoder.c">
+            <configuration Name="Release" build_exclude_from_build="Yes" />
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+          </file>
+        </folder>
+        <folder Name="PWM">
+          <file file_name="../src/BSP/Pwm.h" />
+          <file file_name="../src/BSP/Pwm.c" />
+        </folder>
+        <folder Name="PID">
+          <file file_name="../src/BSP/PID.c" />
+          <file file_name="../src/BSP/PID.h" />
+        </folder>
+        <folder Name="CCM">
+          <file file_name="../src/BSP/Ccm.h" />
+          <file file_name="../src/BSP/DotCfiles/Ccm.c" />
+        </folder>
+        <folder Name="Term">
+          <file file_name="../src/BSP/term.h">
+            <configuration Name="Debug" build_exclude_from_build="No" />
+          </file>
+          <file file_name="../src/BSP/term.c">
+            <configuration Name="Debug" build_exclude_from_build="No" />
+          </file>
+        </folder>
+        <folder Name="Motors">
+          <file file_name="../src/BSP/motors.h" />
+          <file file_name="../src/BSP/DotCfiles/motors.c" />
+        </folder>
+        <folder Name="IMU">
+          <file file_name="../src/BSP/imu.c">
+            <configuration Name="Debug" build_exclude_from_build="No" />
+          </file>
+          <file file_name="../src/BSP/imu.h" />
+          <file file_name="../../../../StdLib/Release/STM32F722/IMU_LIB.a">
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+            <configuration Name="Release" build_exclude_from_build="Yes" />
+          </file>
+        </folder>
+        <folder Name="I2C">
+          <file file_name="../src/BSP/I2c.h" />
+          <file file_name="../src/BSP/DotCfiles/I2c.c">
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+          </file>
+          <file file_name="../src/BSP/I2C_LIB.a">
+            <configuration Name="Debug" build_exclude_from_build="No" />
+            <configuration Name="Release" build_exclude_from_build="Yes" />
+          </file>
+          <configuration Name="Debug" build_exclude_from_build="No" />
+        </folder>
+        <folder Name="Pololu">
+          <file file_name="../src/BSP/PololuV5.h" />
+          <file file_name="../src/BSP/PololuV5Regs.h" />
+          <file file_name="../src/BSP/PololuV5.c" />
+          <file file_name="../src/BSP/DotCfiles/PololuV5.c">
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+            <configuration Name="Release" build_exclude_from_build="Yes" />
+          </file>
+        </folder>
+        <folder Name="Move">
+          <file file_name="../src/BSP/Move.c" />
+        </folder>
+        <folder Name="IPS">
+          <file file_name="../src/BSP/ips.c">
+            <configuration Name="Debug" build_exclude_from_build="No" />
+          </file>
+          <file file_name="../src/BSP/ips.h" />
+        </folder>
+        <folder Name="UWB">
+          <file file_name="../src/BSP/deca_device.c" />
+          <file file_name="../src/BSP/deca_device_api.h" />
+          <file file_name="../src/BSP/deca_param_types.h" />
+          <file file_name="../src/BSP/deca_params_init.c" />
+          <file file_name="../src/BSP/deca_regs.h" />
+          <file file_name="../src/BSP/deca_types.h" />
+          <file file_name="../src/BSP/deca_version.h" />
+        </folder>
+        <folder Name="Matrix">
+          <file file_name="../src/BSP/matrix.c" />
+        </folder>
+        <folder Name="Serial">
+          <file file_name="../src/BSP/Serial.c" />
+        </folder>
+        <folder Name="Ultrasound">
+          <file file_name="../src/BSP/UltraSound.c" />
+          <file file_name="../src/BSP/UltraSound.h" />
+        </folder>
+      </folder>
+      <folder Name="App">
+        <file file_name="../src/main.c" />
+        <folder Name="Term">
+          <file file_name="../src/App/Terminal/term.c">
+            <configuration Name="Release" build_exclude_from_build="Yes" />
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+          </file>
+          <file file_name="../src/App/Terminal/term.h">
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+          </file>
+          <configuration Name="Debug" build_exclude_from_build="No" />
+        </folder>
+        <folder Name="GUI">
+          <file file_name="../../../../StdLib/Common/Lib/GUI/DPGUI_GCC_M7_R10.a">
+            <configuration Name="Debug" build_exclude_from_build="Yes" />
+            <configuration Name="Release" build_exclude_from_build="Yes" />
+          </file>
+          <file file_name="../../../../StdLib/Common/Lib/GUI/GUI_GCC_CM7_R6.a">
+            <configuration Name="Debug" build_exclude_from_build="No" />
+            <configuration Name="Release" build_exclude_from_build="No" />
+          </file>
+          <file file_name="../src/BSP/gui.h">
+            <configuration Name="Release" build_exclude_from_build="No" />
+          </file>
+        </folder>
+      </folder>
+      <folder Name="RTOS">
+        <file file_name="../src/App/RTOS/Source/croutine.c" />
+        <file file_name="../src/App/RTOS/Source/event_groups.c" />
+        <file file_name="../src/App/RTOS/Source/list.c" />
+        <file file_name="../src/App/RTOS/Source/port.c" />
+        <file file_name="../src/App/RTOS/Source/queue.c" />
+        <file file_name="../src/App/RTOS/Source/RTOS.c" />
+        <file file_name="../src/App/RTOS/Source/stream_buffer.c" />
+        <file file_name="../src/App/RTOS/Source/tasks.c" />
+        <file file_name="../src/App/RTOS/Source/timers.c" />
+        <file file_name="../src/App/RTOS/FreeRTOSConfig.h" />
+        <file file_name="../src/BSP/semphr.h" />
+        <file file_name="../src/BSP/portmacro.h" />
+      </folder>
+      <file file_name="../src/BSP/MCU/Startup/STM32F7xx_Target.js" />
+    </folder>
+    <folder Name="System Files">
+      <configuration Name="Common" macros="STLport=No" />
+      <file file_name="../src/BSP/MCU/STM32F7x5_v1r1_Vectors.s" />
+      <file file_name="../src/BSP/MCU/STM32F7xx_Startup.s" />
+      <file file_name="../src/BSP/MCU/thumb_crt0.s" />
+    </folder>
+    <configuration
+      Name="Debug"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_linker_heap_size="512"
+      arm_linker_process_stack_size="256"
+      arm_linker_stack_size="512"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00080000,FFFFFFFF;RWX 20010000,0002c000,CDCDCDCD"
+      arm_target_device_name="STM32F722ZE"
+      arm_target_trace_SWO_speed="1500000"
+      arm_target_trace_clock_speed="216000000"
+      arm_target_trace_interface_type="None"
+      arm_target_trace_port_size="32-bit"
+      c_preprocessor_definitions="_STM32_NUCLEO_F722ZE;_DEBUG;_DMA_EN"
+      c_user_include_directories=".;..\\src;.\\src\\BSP\\MCU;..\\src\\BSP\\MCU\\CMSIS_4\\CMSIS\\Include;..\\src\\BSP\\MCU\\STM32F7xx\\CMSIS\\Device\\Include;..\\Lib\\Common\\Inc;..\\src\\BSP;..\\src\\BSP\\Clock;..\\src\\BSP\\Timer;..\\src\\App\\LCD;..\\src\\BSP\\Dma;..\\src\\App\\RTOS\\Inc;..\\src\\App\\RTOS;..\\src\\App\\Terminal"
+      debug_enable_RTT="No"
+      debug_leave_target_running="No"
+      debug_register_definition_file="../src/BSP/MCU/Startup/STM32F7x5_v1r1_Registers.xml"
+      debug_start_from_entry_point_symbol="Yes"
+      gcc_optimization_level="Debug"
+      link_symbol_definitions="__putchar=x_putchar"
+      linker_memory_map_file="../src/BSP/MCU/Startup/STM32F765BI_MemoryMap.xml"
+      linker_printf_fp_enabled="Double"
+      linker_printf_width_precision_supported="Yes"
+      linker_scanf_fp_enabled="Yes"
+      linker_section_placement_file="../src/BSP/MCU/Startup/flash_placement.xml"
+      linker_section_placements_segments="FLASH RX 0x08000000 0x00080000;SRAM RWX 0x20010000 0x0002c000"
+      speed="25000"
+      target_script_file="../src/BSP/MCU/Startup/STM32F7xx_Target.js" />
+    <configuration
+      Name="Release"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00080000,FFFFFFFF;RWX 20010000,0002c000,CDCDCDCD"
+      arm_target_device_name="STM32F722ZE"
+      c_preprocessor_definitions="_STM32_NUCLEO_F722ZE;_DMA_EN"
+      c_user_include_directories=".;..\\src;.\\src\\BSP\\MCU;..\\src\\BSP\\MCU\\CMSIS_4\\CMSIS\\Include;..\\src\\BSP\\MCU\\STM32F7xx\\CMSIS\\Device\\Include;..\\Lib\\Common\\Inc;..\\src\\BSP;..\\src\\BSP\\Clock;..\\src\\BSP\\Timer;..\\src\\App\\LCD;..\\src\\BSP\\Dma;..\\src\\App\\RTOS\\Inc;..\\src\\App\\RTOS"
+      debug_register_definition_file="../src/BSP/MCU/Startup/STM32F7x5_v1r1_Registers.xml"
+      gcc_optimization_level="Level 3"
+      link_symbol_definitions="__putchar=x_putchar"
+      linker_memory_map_file="../src/BSP/MCU/Startup/STM32F765BI_MemoryMap.xml"
+      linker_printf_fp_enabled="Double"
+      linker_printf_width_precision_supported="Yes"
+      linker_scanf_fp_enabled="Yes"
+      linker_section_placement_file="../src/BSP/MCU/Startup/flash_placement.xml"
+      linker_section_placements_segments="FLASH RX 0x08000000 0x00080000;SRAM RWX 0x20010000 0x0002c000"
+      speed="25000"
+      target_script_file="../src/BSP/MCU/Startup/STM32F7xx_Target.js" />
+    <configuration
+      Name="ReleaseLib"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00080000,FFFFFFFF;RWX 20010000,0002c000,CDCDCDCD"
+      arm_target_device_name="STM32F722ZE"
+      c_preprocessor_definitions="_STM32_NUCLEO_F722ZE;_DMA_EN"
+      c_user_include_directories=".;..\\src;.\\src\\BSP\\MCU;..\\src\\BSP\\MCU\\CMSIS_4\\CMSIS\\Include;..\\src\\BSP\\MCU\\STM32F7xx\\CMSIS\\Device\\Include;..\\Lib\\Common\\Inc;..\\src\\BSP;..\\src\\BSP\\Clock;..\\src\\BSP\\Timer;..\\src\\App\\LCD"
+      debug_register_definition_file="../src/BSP/MCU/Startup/STM32F7x5_v1r1_Registers.xml"
+      gcc_optimization_level="Level 3"
+      link_symbol_definitions="__putchar=x_putchar"
+      linker_memory_map_file="../src/BSP/MCU/Startup/STM32F765BI_MemoryMap.xml"
+      linker_printf_fp_enabled="Double"
+      linker_printf_width_precision_supported="Yes"
+      linker_scanf_fp_enabled="Yes"
+      linker_section_placement_file="../src/BSP/MCU/Startup/flash_placement.xml"
+      linker_section_placements_segments="FLASH RX 0x08000000 0x00080000;SRAM RWX 0x20010000 0x0002c000"
+      speed="25000"
+      target_script_file="../src/BSP/MCU/Startup/STM32F7xx_Target.js" />
+  </project>
+  <configuration
+    Name="Debug"
+    arm_architecture="v7EM"
+    arm_core_type="Cortex-M7"
+    arm_endian="Little"
+    arm_fp_abi="Hard"
+    arm_fpu_type="FPv5-SP-D16"
+    arm_linker_heap_size="512"
+    arm_linker_stack_size="512"
+    arm_simulator_memory_simulation_parameter="RX 08000000,00080000,FFFFFFFF;RWX 20010000,0002c000,CDCDCDCD"
+    arm_target_device_name="STM32F722ZE"
+    arm_target_interface_type="SWD"
+    c_preprocessor_definitions="DEBUG"
+    debug_target_connection="J-Link"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None"
+    linker_section_placements_segments="FLASH RX 0x08000000 0x00080000;SRAM RWX 0x20010000 0x0002c000" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 3" />
+  <configuration
+    Name="ReleaseLib"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 3" />
+</solution>
